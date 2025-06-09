@@ -27,12 +27,12 @@ During WebSocket upgrade, the server performs a GET request to `AUTH_URL` with t
 
 Expected response:
 
-```json
+```typescript
 {
-  "uuid": "string",
+  "uuid": string,
   "type": "agent" | "operator",
-  "isViewOnly": boolean?,         // for operator only
-  "agentUUID": "string"?          // for operator only
+  "isViewOnly"?: boolean,         // for operator only
+  "agentUUID"?: string            // for operator only
 }
 
 ```
